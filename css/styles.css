@@ -1,7 +1,7 @@
 :root {
-  --main-color: #fc9a19;
+  --main-color: #ff831d;
   --main-color-light: #ffb24d;
-  --secundary-color: #0072b0
+  --secundary-color: rgb(8, 16, 26);
 }
 
 *{
@@ -20,7 +20,7 @@ main {
 
 
 .banner-top {
-  background-color: black;
+  background-color: var(--secundary-color);
   color: white;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
@@ -62,8 +62,15 @@ main {
   font-weight: 600;
 }
 
+.dark {
+  background-color: var(--secundary-color);
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
 .time-remaining {
-  background-color: black;
+  background-image: url(../assets/img/dark-bg.jpg);
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -84,35 +91,53 @@ main {
   font-weight: 800;
 }
 
+br {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+}
+
 .award {
-  background-color: var(--main-color);
+  background-color: white;
   padding: 1rem;
   font-weight: 800;
   display: flex;
+  align-items: center;
+  box-shadow: 20px 20px 5px 10px #2226;
 }
 
 .award h2 {
-  background-color: black;
+  background-color: var(--main-color);
   padding: 0.5rem;
   color: white;
   display: inline;
   font-size: 2rem;
+  height: 2em;
+  text-align: center;
+  vertical-align: center;
+}
+
+.award p {
+  color: var(--main-color);
 }
 
 .award p {
   display: inline;
   padding: 0.5rem;
   font-size: 2rem;
+  font-size: min(7vw, 2rem);
+
 }
 
 main {
   padding: 1rem;
-  background-color: #ccc;
+  background-image: url("../assets/img/bg.jpg");
 }
 
 section {
   background-color: white;
   border-radius: 1rem;
+  box-shadow: 2px 2px 5px #2226;
 }
 
 article {
@@ -121,7 +146,7 @@ article {
 }
 
 section h2 {
-  background-color: black;
+  background-color: var(--main-color);
   color: white;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -146,6 +171,7 @@ footer {
 .contact {
   padding: 1rem;
   background-color: white;
+  box-shadow: 0px 0px 10px #4446;
 }
 
 .contact h2 {
